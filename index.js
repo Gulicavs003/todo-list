@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 
           editStatus = true;
           id = doc.id;
-          taskForm["btn-task-form"].innerText = "Update";
+          taskForm["btn-task-form"].innerText = "Actualizar";
 
         } catch (error) {
           console.log(error);
@@ -98,7 +98,7 @@ taskForm.addEventListener("submit", async (e) => {
 
       editStatus = false;
       id = '';
-      taskForm['btn-task-form'].innerText = 'Save';
+      taskForm['btn-task-form'].innerText = 'Guardar';
     }
 
     taskForm.reset();
