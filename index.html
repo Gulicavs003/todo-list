@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+</head>
+<body>
+  
+    
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+
+            <h1 class="h4">Add Task</h1>
+
+            <form id="task-form">
+              <div class="form-group">
+                <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Task Title"
+                  autofocus>
+              </div>
+              <div class="form-group">
+                <textarea id="task-description" rows="3" class="form-control" placeholder="Task Description"></textarea>
+              </div>
+
+              <button class="btn btn-primary" id="btn-task-form">
+                Save
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Tasks List -->
+      <div class="col-md-6" id="tasks-container"></div>
+    </div>
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyArQJ-HJsptx1qoEt6FBelMetrf1xQWAM4",
+    authDomain: "block-de-notas-c77c8.firebaseapp.com",
+    databaseURL: "https://block-de-notas-c77c8-default-rtdb.firebaseio.com",
+    projectId: "block-de-notas-c77c8",
+    storageBucket: "block-de-notas-c77c8.appspot.com",
+    messagingSenderId: "863145535343",
+    appId: "1:863145535343:web:fc98751ca3240a76cb6a9a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
